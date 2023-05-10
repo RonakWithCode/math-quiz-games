@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "695253497082",
+    "project_id": "math-quiz-games-26180",
+    "storage_bucket": "math-quiz-games-26180.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695253497082:android:aecd4c1303acf008e8c543",
+        "android_client_info": {
+          "package_name": "com.crazyostudio.mathquizgames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695253497082-f90g6pnd8jgsbbns8dcaipoo5rbn17v1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSySl6_0AXWn30AcZzT5D46dpaPwZt_Fo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695253497082-f90g6pnd8jgsbbns8dcaipoo5rbn17v1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

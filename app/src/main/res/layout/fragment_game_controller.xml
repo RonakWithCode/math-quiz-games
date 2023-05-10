@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".Fragment.GameControllerFragment">
+    <LinearLayout
+        android:id="@+id/starLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/point1"
+            android:scaleType="fitXY"
+            android:layout_width="50dp"
+            android:layout_marginStart="140dp"
+            android:layout_height="50dp"
+            android:src="@drawable/yellowstarpoint" />
+        <ImageView
+            android:id="@+id/point2"
+            android:scaleType="fitXY"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/yellowstarpoint" />
+        <ImageView
+            android:id="@+id/point3"
+            android:scaleType="fitXY"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/yellowstarpoint" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/points"
+        android:layout_below="@id/starLayout"
+        android:text="0/10"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/Ques"
+        android:text="5+9 = "
+        android:layout_below="@id/points"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_below="@id/Ques"
+        android:layout_marginTop="90dp"
+        android:id="@+id/ans1"
+        android:textSize="45sp"
+        android:layout_marginStart="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        />
+    <Button
+        android:layout_below="@id/Ques"
+        android:layout_marginTop="90dp"
+        android:id="@+id/ans2"
+        android:textSize="45sp"
+        android:layout_marginEnd="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        />
+        />
+    <Button
+        android:layout_below="@id/ans2"
+        android:layout_marginTop="20dp"
+        android:id="@+id/findAns"
+        android:textSize="45sp"
+        android:layout_marginEnd="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        />
+
+
+</RelativeLayout>

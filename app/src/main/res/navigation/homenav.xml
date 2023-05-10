@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homenav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.crazyostudio.mathquizgames.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_offline_modeFragment"
+            app:destination="@id/offline_modeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_olineModeFragment"
+            app:destination="@id/olineModeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offline_modeFragment"
+        android:name="com.crazyostudio.mathquizgames.Fragment.offline_modeFragment"
+        android:label="fragment_offline_mode"
+        tools:layout="@layout/fragment_offline_mode" >
+        <action
+            android:id="@+id/action_offline_modeFragment_to_gameControllerFragment"
+            app:destination="@id/gameControllerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/olineModeFragment"
+        android:name="com.crazyostudio.mathquizgames.Fragment.OlineModeFragment"
+        android:label="fragment_oline_mode"
+        tools:layout="@layout/fragment_oline_mode" />
+    <fragment
+        android:id="@+id/gameControllerFragment"
+        android:name="com.crazyostudio.mathquizgames.Fragment.GameControllerFragment"
+        android:label="fragment_game_controller"
+        tools:layout="@layout/fragment_game_controller" >
+        <action
+            android:id="@+id/action_gameControllerFragment_to_gameResultFragment"
+            app:destination="@id/gameResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameResultFragment"
+        android:name="com.crazyostudio.mathquizgames.Fragment.GameResultFragment"
+        android:label="fragment_game_result"
+        tools:layout="@layout/fragment_game_result" >
+        <action
+            android:id="@+id/action_gameResultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
